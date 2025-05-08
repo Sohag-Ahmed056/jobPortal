@@ -92,6 +92,23 @@ const JobListing = () => {
         </Button>
       </form>
 
+      <form
+  
+  className="h-14 flex flex-row w-full gap-2 items-center mb-3"
+  encType="multipart/form-data"
+>
+  <Input
+    type="file"
+    accept="image/*"
+    name="image"
+    className="h-full flex-1 px-2 text-sm"
+  />
+  <Button type="submit" className="h-full sm:w-28" variant="blue">
+    Upload
+  </Button>
+</form>
+
+
       <div className="flex flex-col sm:flex-row gap-2">
         <Select value={location} onValueChange={(value) => setLocation(value)}>
           <SelectTrigger>
